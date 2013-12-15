@@ -1,7 +1,7 @@
 Sass Boilerplate for generic CSS/HTML
 =============
 goshazvir boilerplate. 
-(taken as a basis [github.com/goshazvir/sass/tree/master/](//github.com/goshazvir/sass/tree/master/))
+(taken as a basis [github.com/coderiver/sass/tree/master](//github.com/coderiver/sass/tree/master/))
 
 I'm using this as a starting template for almost any project now.
 It includes sprites, assorted mixins (aka code snippets), file structure, jquery+cycle+scrollto (most usable these days).
