@@ -1,0 +1,237 @@
+// input
+// select
+// checkbox
+// radio
+// textarea
+
+// shared variables for all form elements
+$f-height: 30px
+$f-bg: #e8f2ea
+$f-border: #c6c6c6
+$f-color: #424242
+
+// variables for select
+$sel-padding: 0 10px
+$sel-bg_gray: #c78585
+
+// variables for checbox
+$ch-size: 20px
+
+// variables for radio
+$rad-size: 20px
+$rad-checked_size: 12px
+$rad-checked_bg: #2a906b
+
+// variables for textarea
+$tex-pad: 10px
+
+///////////////////////////////// * input * ////////////////////////////////
+[class^="input-"], [class*=" input-"]
+	outline: none
+	+transition(0.2s)
+	&:hover
+		+transition(0.2s)
+
+.input-large
+	padding: 10px 15px
+	+fs(16)
+.input-small
+	padding: 5px 10px
+	+fs(14)
+.input-mini
+	padding: 2px 5px
+	+fs(12)
+
+.input-default
+	height: $f-height
+	background: $f-bg 
+	border: 1px solid $f-border
+	padding: 5px 10px
+	color: $f-color
+	+placeholder($f-color)
+	+br(3)
+	+fs(14)
+	+box
+	&:hover
+		border: 1px solid darken($f-border,5%)
+	&:focus
+		border: 1px solid darken($f-border,15%)
+		@include box-shadow(inset 0 1px 2px darken($f-border,5%))
+///////////////////////////////// * select * ////////////////////////////////
+.select
+	height: $f-height
+	line-height: ($f-height - 2px)
+	background: $f-bg
+	border: 1px solid $f-border
+	color: $f-color 
+	cursor: pointer
+	position: relative
+	+fs(14) //
+	+br(3) //
+	+box
+	+unselect
+	span
+		padding: $sel-padding
+		display: block
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+	em
+		font-style: normal
+	i
+		content: ""
+		position: absolute
+		right: 10px //
+		+position(false, 6) //
+		+arr(10, 6, $f-border, b) //
+	&.is-open
+		+br(3px 3px 0px 0) //
+		.select__drop
+			display: block
+		i
+			+transform(rotate(180deg))
+	.select__drop
+		display: none
+		position: absolute
+		top: 100%
+		left: -1px
+		width: 100%
+		z-index: 666
+		background: $f-bg
+		border: 1px solid $f-border
+	ul
+		margin: 0
+	li
+		padding: $sel-padding
+		&:hover
+			background: darken($f-bg, 5%)
+			cursor: pointer
+		span
+			padding: 0
+
+.select_w100
+	width: 100%
+.select_large
+	width: 555px
+	+fs(16)
+.select_small
+	width: 300px
+	+fs(14)
+.select_mini
+	width: 100px
+	+fs(12)
+
+.select_gray
+	background: $sel-bg_gray
+	border: 1px solid orange
+	color: #fff
+	.select__drop
+		background: $sel-bg_gray
+		border: 1px solid orange
+		color: #fff
+	li
+		&:hover
+			background: darken($sel-bg_gray, 5%)
+///////////////////////////////// * checkbox * ////////////////////////////////
+.checkbox
+	height: $ch-size
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	+fs(14) //
+	span
+		color: $f-color
+		display: inline-block
+		margin-left: 10px //
+		+unselect
+	input
+		+opacity(0)
+	input + span
+		.checkbox__ico
+			content: ""
+			position: absolute
+			top: 0px
+			left: 0px
+			width: $ch-size
+			height: $ch-size
+			border: 1px solid #c2c2c2 //
+			background: $f-bg
+			+box
+			+br(3) //
+	input:checked + span
+		.checkbox__ico
+			&:after
+				content: ""
+				position: absolute
+				+position(9,9) //
+				+s(i-checked)
+				z-index: 666
+	input:checked + span
+		color: red  //
+///////////////////////////////// * radio * ////////////////////////////////
+.radio
+	height: $rad-size 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	+fs(12) //
+	span
+		display: inline-block
+		vertical-align: middle
+		margin-left: 10px //
+	input
+		+opacity(0)
+		position: relative
+	input + span
+		color: $f-color 
+		&:before
+			content: ""
+			position: absolute
+			top: 0px
+			left: 0px
+			width: $rad-size
+			height: $rad-size
+			border: 1px solid $f-border
+			border-radius: 50%
+			background: #fff //
+			+opacity(1)
+			+box
+	input:checked + span
+		color: red // 
+		&:after
+			content: ""
+			position: absolute
+			top: (($rad-size - $rad-checked_size) / 2)
+			left: (($rad-size - $rad-checked_size) / 2)
+			width: $rad-checked_size
+			height: $rad-checked_size
+			border-radius: 50%
+			background: $rad-checked_bg
+///////////////////////////////// * textarea * ////////////////////////////////
+.textarea
+	width: 400px // 
+	min-height: 200px //
+	padding:  $tex-pad
+	outline: none
+	background: $f-bg
+	border: 1px solid $f-border
+	color: $f-color
+	+fs(14)
+	+box
+	&:hover
+		border: 1px solid darken($f-border,5%)
+	&:focus
+		border: 1px solid darken($f-border,15%)
+		@include box-shadow(inset 0 1px 2px darken($f-border,5%))
+
+
+
+
+
+
+
+
+
+

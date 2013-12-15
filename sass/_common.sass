@@ -1,31 +1,80 @@
-// base
+// var & mixins
 // fonts
+// base
+	// html, body, .out, selection
+	// a, .h2, .h3, .h4, .h5
 // .header
 // .footer
 // index.html style
+///////////////////////////////// *  * ////////////////////////////////
+
+///////////////////////////////// * var & mixins * ////////////////////////////////
+
+
+///////////////////////////////// * fonts * ////////////////////////////////
 
 ///////////////////////////////// * base * ////////////////////////////////
+html
+	font-size: 62.5%
+	font-family: sans-serif
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+
+body
+	z-index: 666
+	margin: 0
+	font:
+		family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif
+		weight: normal
+	line-height: 1.4
+	+fs(14) 
+
+.out
+	// some style
+
 +selection(red, blue)
+
 a
 	text-decoration: underline
 	&:hover
 		text-decoration: none
 
+.h2
+	+fs(26)
+
+.h3
+	+fs(24)
+
+.h4
+	+fs(21)
+
+.h5
+	+fs(18)
+
+// DELETE THIS STYLE, ITS  FRAMEWORK 
 .description-template
 	width: 90%
 	margin: 50px auto
 	p, ul
 		margin-bottom: 15px
+	.description-template__label
+		margin-bottom: 15px
+		padding: 15px
+		border: 1px solid #000
+		background: #bff1c8 
+		+box
+		.h3
+			+fs(21)
 .snippets-template
 	.snippets-template__item
 		border: 1px solid #c6c6c6
 	ul
 		margin-bottom: 0
 .row
+	padding: 5px
 	margin-bottom: 10px
-///////////////////////////////// * fonts * ////////////////////////////////
-
-
+	border: 1px solid red
+	
 
 ///////////////////////////////// * .header * ////////////////////////////////
 

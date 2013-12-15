@@ -46,8 +46,8 @@
 		color: ($color)
 		
 @mixin br($val)
-	-webkit-border-radius: $val
-	border-radius: $val
+	-webkit-border-radius: $val + px
+	border-radius: $val + px
 		
 @mixin box
 	-webkit-box-sizing: border-box
@@ -184,28 +184,28 @@
 	width: 0px
 	height: 0px
 	border-style: solid
-	@if $direction == top
+	@if $direction == t
 		border-width: 0 ($width / 2) + px $height + px ($width / 2) + px
 		border-color: transparent transparent $bg transparent
-	@if $direction == right
+	@if $direction == r
 		border-width: ($height / 2) + px 0 ($height / 2) + px $width + px
 		border-color: transparent transparent transparent $bg
-	@if $direction == bottom
+	@if $direction == b
 		border-width: $height + px ($width / 2) + px 0 ($width / 2) + px
 		border-color: $bg transparent transparent transparent
-	@if $direction == left
+	@if $direction == l
 		border-width: ($height / 2) + px $width + px ($height / 2) + px 0
 		border-color: transparent $bg transparent transparent
-	@if $direction == top-l
+	@if $direction == tl
 		border-width: $height + px $width + px 0 0
 		border-color: $bg transparent transparent transparent
-	@if $direction == top-r
+	@if $direction == tr
 		border-width: 0 $width + px $height + px 0
 		border-color: transparent $bg transparent transparent
-	@if $direction == bottom-r
+	@if $direction == br
 		border-width: 0 0 $height + px $width + px
 		border-color: transparent transparent $bg transparent
-	@if $direction == bottom-l
+	@if $direction == bl
 		border-width: $width + px 0 0 $height + px 
 		border-color: transparent transparent transparent $bg
 // +arr(500,50, #000, left)
@@ -218,28 +218,28 @@
 		width: 0px
 		height: 0px
 		border-style: solid
-		@if $direction == top
+		@if $direction == t
 			border-width: 0 ($width / 2) + px $height + px ($width / 2) + px
 			border-color: transparent transparent $bg transparent
-		@if $direction == right
+		@if $direction == r
 			border-width: ($height / 2) + px 0 ($height / 2) + px $width + px
 			border-color: transparent transparent transparent $bg
-		@if $direction == bottom
+		@if $direction == b
 			border-width: $height + px ($width / 2) + px 0 ($width / 2) + px
 			border-color: $bg transparent transparent transparent
-		@if $direction == left
+		@if $direction == l
 			border-width: ($height / 2) + px $width + px ($height / 2) + px 0
 			border-color: transparent $bg transparent transparent
-		@if $direction == top-l
+		@if $direction == tl
 			border-width: $height + px $width + px 0 0
 			border-color: $bg transparent transparent transparent
-		@if $direction == top-r
+		@if $direction == tr
 			border-width: 0 $width + px $height + px 0
 			border-color: transparent $bg transparent transparent
-		@if $direction == bottom-r
+		@if $direction == br
 			border-width: 0 0 $height + px $width + px
 			border-color: transparent transparent $bg transparent
-		@if $direction == bottom-l
+		@if $direction == bl
 			border-width: $width + px 0 0 $height + px 
 			border-color: transparent transparent transparent $bg
 

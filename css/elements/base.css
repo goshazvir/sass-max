@@ -1,116 +1,6 @@
-* { margin: 0; padding: 0; }
-
-.clearfix:after { display: block; visibility: hidden; clear: both; height: 0; content: ""; font-size: 0; line-height: 0; }
-
-html, button, input, select, textarea { color: #222222; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
-
-audio, canvas, video { display: inline-block; }
-
-audio, canvas, img, svg, video { vertical-align: middle; }
-
-fieldset { border: 0; margin: 0; padding: 0; }
-
-textarea { resize: vertical; overflow: auto; vertical-align: top; }
-
-ul { list-style: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-img { border: 0; }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
-audio:not([controls]) { display: none; height: 0; }
-
-[hidden], template { display: none; }
-
-a { background: transparent; }
-a:focus { outline: thin dotted; }
-a:active, a:hover { outline: 0; }
-
-abbr[title] { border-bottom: 1px dotted; }
-
-b, strong { font-weight: bold; }
-
-dfn { font-style: italic; }
-
-hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
-
-mark { background: yellow; color: black; }
-
-code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
-
-pre { white-space: pre-wrap; }
-
-q { quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-small { font-size: 80%; }
-
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-
-sup { top: -0.5em; }
-
-sub { bottom: -0.25em; }
-
-svg:not(:root) { overflow: hidden; }
-
-figure { margin: 0; }
-
-fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
-
-legend { border: 0; padding: 0; }
-
-button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
-
-button, input { line-height: normal; }
-
-button, select { text-transform: none; }
-
-button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
-
-button[disabled], html input[disabled] { cursor: default; }
-
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
-
-input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-
-input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
-
-html { font-size: 62.5%; font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
-
-body { z-index: 666; margin: 0; font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-weight: normal; line-height: 1.4; font-size: 14px; font-size: 1.4rem; }
-
-::selection { background: blue; color: red; }
-
-::-moz-selection { background: blue; color: red; }
-
-a { text-decoration: underline; }
-a:hover { text-decoration: none; }
-
-.h2 { font-size: 26px; font-size: 2.6rem; }
-
-.h3 { font-size: 24px; font-size: 2.4rem; }
-
-.h4 { font-size: 21px; font-size: 2.1rem; }
-
-.h5 { font-size: 18px; font-size: 1.8rem; }
-
-.description-template { width: 90%; margin: 50px auto; }
-.description-template p, .description-template ul { margin-bottom: 15px; }
-.description-template .description-template__label { margin-bottom: 15px; padding: 15px; border: 1px solid black; background: #bff1c8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.description-template .description-template__label .h3 { font-size: 21px; font-size: 2.1rem; }
-
-.snippets-template .snippets-template__item { border: 1px solid #c6c6c6; }
-.snippets-template ul { margin-bottom: 0; }
-
-.row { padding: 5px; margin-bottom: 10px; border: 1px solid red; }
-
 [class^="i-"], [class*=" i-"] { display: inline-block; vertical-align: middle; }
+
+.i-checked { background: url('../../img/icons-s45f6be1a61.png') 0 -25px no-repeat; width: 9px; height: 8px; }
 
 [class^="btn-"], [class*=" btn-"] { display: inline-block; vertical-align: middle; line-height: 1; cursor: pointer; outline: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; text-decoration: none; border: none; -webkit-border-radius: 3px; border-radius: 3px; }
 [class^="btn-"]:hover, [class*=" btn-"]:hover { -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; }
@@ -169,7 +59,7 @@ a:hover { text-decoration: none; }
 .checkbox span { color: #424242; display: inline-block; margin-left: 10px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .checkbox input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .checkbox input + span .checkbox__ico { content: ""; position: absolute; top: 0px; left: 0px; width: 20px; height: 20px; border: 1px solid #c2c2c2; background: #e8f2ea; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; border-radius: 3px; }
-.checkbox input:checked + span .checkbox__ico:after { content: ""; position: absolute; left: 50%; width: 9px; margin-left: -4.5px; top: 50%; height: 9px; margin-top: -4.5px; background: url('../img/icons-s45f6be1a61.png') 0 -25px no-repeat; width: 9px; height: 8px; z-index: 666; }
+.checkbox input:checked + span .checkbox__ico:after { content: ""; position: absolute; left: 50%; width: 9px; margin-left: -4.5px; top: 50%; height: 9px; margin-top: -4.5px; background: url('../../img/icons-s45f6be1a61.png') 0 -25px no-repeat; width: 9px; height: 8px; z-index: 666; }
 .checkbox input:checked + span { color: red; }
 
 .radio { height: 20px; position: relative; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 12px; font-size: 1.2rem; }

@@ -1,0 +1,36 @@
+///////////////////////////////// * btn * ////////////////////////////////
+[class^="btn-"], [class*=" btn-"]
+	display: inline-block
+	vertical-align: middle
+	line-height: 1
+	cursor: pointer
+	outline: none
+	+unselect
+	+transition(0.2s)
+	text-decoration: none //
+	border: none // 
+	+br(3) //
+	&:hover
+		+transition(0.2s)
+	&:active
+		+transform(scale(0.95))
+
+.btn-large
+	padding: 15px
+	+fs(16)
+.btn-small
+	padding: 10px
+	+fs(14)
+.btn-mini
+	padding: 5px
+	+fs(12)
+
+.btn-blue
+	$btn-bg: #5493E3
+	background: $btn-bg
+	color: #fff
+	&:hover
+		// background: lighten($btn-bg,5%)
+		background: darken($btn-bg,5%)
+
+
