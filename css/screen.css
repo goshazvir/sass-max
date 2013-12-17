@@ -112,6 +112,8 @@ a:hover { text-decoration: none; }
 
 [class^="i-"], [class*=" i-"] { display: inline-block; vertical-align: middle; }
 
+.i-checked { background: url('../img/icons-s45f6be1a61.png') 0 -25px no-repeat; width: 9px; height: 8px; }
+
 [class^="btn-"], [class*=" btn-"] { display: inline-block; vertical-align: middle; line-height: 1; cursor: pointer; outline: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; text-decoration: none; border: none; -webkit-border-radius: 3px; border-radius: 3px; }
 [class^="btn-"]:hover, [class*=" btn-"]:hover { -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; -ms-transition: 0.2s; transition: 0.2s; }
 [class^="btn-"]:active, [class*=" btn-"]:active { -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms-transform: scale(0.95); -o-transform: scale(0.95); transform: scale(0.95); }

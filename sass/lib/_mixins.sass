@@ -243,3 +243,17 @@
 			border-width: $width + px 0 0 $height + px 
 			border-color: transparent transparent transparent $bg
 
+@mixin arr-tra($width, $height,$bg, $direction)  
+	+arr($width, $height,transparent,r)
+	position: relative
+	&:after, &:before
+		content: ""
+		position: absolute
+		z-index: 666
+		left: -$width + px
+	&:after
+		+arr($width,$width,$bg,tr)
+		top: -$width + px
+	&:before
+		+arr($width,$width,$bg,br)
+		bottom: -$width + px
